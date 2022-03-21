@@ -6,7 +6,7 @@ from .views import index
 from main import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('', index),
+    path('admin/', admin.site.urls),
     path('urls/', views.urlList, name = 'url-list'),
 ]
